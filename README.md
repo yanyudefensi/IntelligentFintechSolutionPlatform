@@ -14,3 +14,7 @@
 
 ```
 
+The general idea of is use NLP-based search engine and knowledge-graph based reasoning engine to analyze business requirements, and then create a analysis report with a possible solution, e.g., the related technologies, the potential vendors, and the similar use cases.
+
+It's the group work of 2016 fintech class in South China University of Technology.
+
