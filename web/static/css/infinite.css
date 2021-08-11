@@ -1,0 +1,62 @@
+/*!
+ * Start Bootstrap - Coming Soon v5.0.4 (https://startbootstrap.com/template-overviews/coming-soon)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-coming-soon/blob/master/LICENSE)
+ */
+html {
+  height: 100%;
+  width:100%
+}
+
+body {
+  height: 100%;
+  position: relative;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Merriweather';
+  font-weight: 700;
+}
+ @media (pointer:coarse) and (hover:none){body{background: #002e66 no-repeat center
+  center scroll;background-position:cover}body video{display:none}}
+
+/*the navigation*/
+.navigation
+{
+z-index:99;
+position:fixed
+top:400px;
+left:340px;
+transform-property:transform,transform;
+transform-duration:0.45s,0.45s;
+transform-timing-function:ease,ease;
+transition-delay:0s,0s;
+}
+/*The first page*/
+.search_page{background-position: center; background-size: cover; background-repeat: no-repeat;overflow:hidden;
+               padding-bottom:3rem;z-index:0}
+.search_page.page-bg{position:absolute;top:0;bottom:0;right:0;left:0;width:100%;background-image: url(../img/橙色.jpg);
+  -webkit-transform:skewY(4deg);transform:skewY(4deg);-webkit-transform-origin:bottom right;transform-origin:bottom right}
+.search_page .masthead-content h1{font-size:2.5rem}
+.search_page.masthead-content p{font-size:1.2rem}
+.search_page.masthead-content p strong{font-weight:700}
+.search_page.masthead-content .input-group-newsletter input{height:auto;font-size:1rem;padding:1rem}
+.search_page.masthead-content .input-group-newsletter button{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:1rem}
+  @media (min-width:768px)
+
+  {.masthead{height:100%;min-height:0;width:40.5rem;padding-bottom:0}
+  .masthead .masthead-bg{min-height:0;-webkit-transform:skewX(-8deg);transform:skewX(-8deg);-webkit-transform-origin:top right;transform-origin:top right}
+  .masthead .masthead-content{padding-left:3rem;padding-right:10rem}
+  .masthead .masthead-content h1{font-size:3.5rem}
+  .masthead .masthead-content p{font-size:1.3rem}}
+/*the second page*/
+
+
+/*the third pages*/

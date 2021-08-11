@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+pyquery = "*"
+redis = "*"
+aiohttp = "*"
+requests = "*"
+pyopenssl = {path = "./packages/pyOpenSSL-19.0.0-py2.py3-none-any.whl"}
+twisted = {path = "./packages/Twisted-18.9.0-cp36-cp36m-win_amd64.whl"}
+scrapy = "*"
+pymongo = "*"
+wtforms = "*"
+"py2neo" = "*"
+elasticsearch = ">=7.0.0"
+jieba = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"

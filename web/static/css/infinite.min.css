@@ -1,0 +1,83 @@
+/*!
+ * Start Bootstrap - Coming Soon v5.0.4 (https://startbootstrap.com/template-overviews/coming-soon)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-coming-soon/blob/master/LICENSE)
+ */
+ html{height:100%}
+ body{height:100%;min-height:35rem;position:relative;font-family:'Source Sans Pro';font-weight:300}
+ h1,h2,h3,h4,h5,h6{font-family:Merriweather;font-weight:700}
+  @media (pointer:coarse) and (hover:none){body{background: #002e66 no-repeat center
+  center scroll;background-position:cover}body video{display:none}}
+
+  /*表示第一个界面*/
+  .overlay{position:absolute;top:0;left:0;height:100%;width:100%;opacity:.7;z-index:1}
+  .masthead{position:relative;overflow:hidden;padding-bottom:3rem;z-index:2}
+  .masthead .masthead-bg{position:absolute;top:0;bottom:0;right:0;left:0;width:100%;min-height:35rem;height:100%;
+  background-color:rgba(0,46,102,.8);-webkit-transform:skewY(4deg);transform:skewY(4deg);
+  -webkit-transform-origin:bottom right;transform-origin:bottom right}
+  .masthead .masthead-content h1{font-size:2.5rem}
+  .masthead .masthead-content p{font-size:1.2rem}
+  .masthead .masthead-content p strong{font-weight:700}
+  .masthead .masthead-content .input-group-newsletter input{height:auto;font-size:1rem;padding:1rem}
+  .masthead .masthead-content .input-group-newsletter button{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:1rem}
+  @media (min-width:768px)
+
+  {.masthead{height:100%;min-height:0;width:40.5rem;padding-bottom:0}
+  .masthead .masthead-bg{min-height:0;-webkit-transform:skewX(-8deg);transform:skewX(-8deg);-webkit-transform-origin:top right;transform-origin:top right}
+  .masthead .masthead-content{padding-left:3rem;padding-right:10rem}
+  .masthead .masthead-content h1{font-size:3.5rem}
+  .masthead .masthead-content p{font-size:1.3rem}}
+
+  /*表示第二个界面*/
+  /* 第二个界面 */
+  .kg-base{ position: relative; background-position: center; background-size: cover; background-repeat: no-repeat;overflow:hidden;
+  padding-bottom:3rem;z-index:2}
+  .kg-base.background { background-image: url(../img/微信图片_20190411215134.jpg); }
+  .kg-base.color { background-color:#8FBC8F ;}
+  .kg-base .box1 {position: absolute; left: 50px; top:120px;vertical-align:middle background-color:#8FBC8F }
+  .kg-base .box2 {position: absolute; left: 90px; top:200px; vertical-align:middle background-color:#8FBC8F }
+  .kg-base .box3 {position: absolute; left: 130px; top:280px; vertical-align:middle background-color:#8FBC8F }
+  .kg-base .box4 {position: absolute; left: 170px; top:360px; vertical-align:middle background-color:#8FBC8F }
+  .kg-base .box5 {position: absolute; left: 210px; top:440px; vertical-align:middle background-color:#8FBC8F }
+  .kg-base .title {font-size: 28px; margin: 4px; font-weight: normal; color: #444444; color: #ffffff;font-style: italic;}
+  .kg-base .subtitle{ font-size: 15px; position: relative; margin: 4px; font-weight: light; color: #444444; color: #ffffff; }
+  .kg-base .s_title{height: 40px; font-size: 9px; position: relative; margin: 4px; font-weight: light; color: #0000CD; color: #ffffff; height: 45px;}
+
+   @media (min-width:768px)
+
+    /*第三个界面*/
+    .NLP{ position: relative; background-position: center; background-size: cover; background-repeat: no-repeat;overflow:hidden;
+          padding-bottom:3rem;z-index:2}
+    .NLP.color{background-color: #C0C0C0}
+
+
+/*输入框的显示*/
+  .input{font-weight:300!important}
+
+
+@media (max-width:1024px) {
+    .met-video .video-bg { height: 100%; top: 0; position: absolute; width: 100%; left: 0; height: 100%; top: 0; position: absolute; width: 100%; left: 0; }
+    .banner_met_11_6_2 .banner-text h3 { font-size: 30px }
+    .banner_met_11_6_2 .banner-text p { font-size: 20px }
+    /*.banner_met_11_6_2.banner-ny-h { min-height: 200px; height: 200px; }
+    .banner_met_11_6_2.banner-ny-h .banner-item { min-height: 200px; }*/
+    .banner_met_11_6_2.banner-ny-h .banner-text .title { font-size: 26px; }
+    .banner_met_11_6_2.banner-ny-h .banner-text .subtitle { font-size: 18px; }
+}
+@media (max-width:767px) {
+    .banner_met_11_6_2-ny { height: 90px }
+    .banner_met_11_6_2-ny h1, .banner_met_11_6_2-ny h2 { font-size: 26px }
+    .banner_met_11_6_2 { height: 500px; }
+    .banner_met_11_6_2.banner-ny-h { height: 150px }
+    .banner_met_11_6_2.banner-ny-h .banner-text .title { margin-bottom: 15px; padding: 0; font-size: 24px; height: auto }
+    .banner_met_11_6_2.banner-ny-h .banner-text .subtitle { margin-top: 15px; font-size: 16px }
+    .banner_met_11_6_2 .banner-text .container { width: 100% }
+    .banner_met_11_6_2 .banner-text.p-5 .container .banner-text-con { width: 100% }
+    .banner_met_11_6_2 .banner-text h3 { font-size: 24px }
+    .banner_met_11_6_2 .banner-text p { margin-top: 15px; font-size: 18px }
+    .banner_met_11_6_2 .banner-text .btn-more { margin-top: 20px; font-size: 16px }
+}
+
+/* 内页轮播 */
+.banner_met_11_6_2-ny { background-color: #ffffff; background-color: ; height: 120px; }
+.banner_met_11_6_2-ny h1 { margin: 0px; padding: 10px 30px; font-size: 35px; text-shadow: none; color: #444444; color: ; }

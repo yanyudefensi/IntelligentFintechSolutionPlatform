@@ -1,0 +1,486 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Fintech Search</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <link href="/static/font/font-type.css" rel="stylesheet">
+  <link href="/static/css/infinite.css" rel="stylesheet">
+  <link href="/static/resource/bootstrap2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/layui/css/layui.css" media="all">
+
+  <script src="/static/layui/layui.all.js"></script>
+  <script src="/static/js/jquery-3.4.1.min.js"></script>
+
+  <style>
+    li {
+      display: inline;
+    }
+
+    .navigation ul {
+      padding: 1px;
+      list-style: none;
+      position: fixed;
+      height: 50px;
+      width: 100%;
+    }
+
+    .navigation ul li {
+      width: 15%;
+      float: left;
+      left: 280px;
+      text-align: center;
+      margin: 0px 9px 0px 9px;
+      padding-top: 2px;
+      padding-bottom: 8px;
+    }
+
+    .navigation ul li a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-weight: bold;
+      font-size: 20px
+    }
+
+    .navigation ul li a:hover {
+      display: block;
+      color: #000000;
+      background: #C0C0C0;
+    }
+
+    .top-bar {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      background: 100% 100%/ cover no-repeat;
+      width: 100%;
+      height: 340px;
+      background-image: url(/static/img/17946.jpg)
+    }
+
+    #search {
+      opacity: 1;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 10px;
+      left: 395px;
+      float: right;
+      background-image: url(/static/img/search_icon.png);
+      background-repeat: 100% 100% no-repeat;
+      background-size: 40px;
+      border: none;
+      z-index: 5555;
+      outline: none;
+      background-position: center;
+    }
+
+    .pagination-centered {
+      text-align: center;
+    }
+
+    .sidebar {
+      padding-left: 20px;
+    }
+
+    .sidebar li {
+      color: #3399FF;
+      display: block;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--body-wrapper不会bootstrap的框架-->
+  <section class="body-header">
+    <div class="top-bar">
+      <div class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="encyclopedias.html" >Encyclopedias</a></li>
+          <li><a href="kg.html" >KnowledgeGraph</a></li>
+        </ul>
+      </div>
+      <div class="Search Title" style="position:absolute;top:70px;left:70px;width:1124px;border-bottom-color:#FFFFFF">
+        <h2 style="position:absolute; top:66px;left:70px;font-size:28px; color:#FFFFFF">
+          <strong>SEARCH</strong></h2>
+        <hr>
+      </div>
+
+      <div class="Search_box" style="position:relative;top:200px;left:400px;padding:5px 5px 5px 5px ">
+        <div class="input-group">
+          <input id="keyword" type="text" value="" class="form-control"
+            style="width:450px;height:60px;font-size:20px;border-radius:15px;padding-right: 40px;"
+            placeholder="Searching">
+          <button id='search' class="ps-icon-search1"><a href="#"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="main">
+    <div style="position:relative;top:380px; background: 0% 0% / cover no-repeat">
+      <section class="layui-container">
+        <div class="layui-row layui-col-space10">
+          <div class="layui-col-md9">
+            <ul class="layui-nav" style="width:100%">
+              <li class="layui-nav-item" id='tech' onclick="query_cont('article')">
+                <a href='#'>Documents</a></li>
+              <li class="layui-nav-item" id='solu' onclick="query_cont('solution')">
+                <a href='#'>Solutions</a></li>
+              <li class="layui-nav-item" id='comp' onclick="query_cont('vendor')">
+                <a href='#'>Vendors</a></li>
+            </ul>
+            <div class="grid-demo" id="main_content">
+              <article>
+                <div class="text left">
+                  <!-- Post Title -->
+                  <h4 class="title reset"><a href="#"></a></h4>
+                  <p class=""></p><a href="#" target="_blank"></a>
+                </div>
+              </article><br>
+              <article>
+                <div class="text left">
+                  <!-- Post Title -->
+                  <h4 class="title reset"><a href="#"></a></h4>
+                  <p class=""></p><a href="#" target="_blank"></a>
+                </div>
+              </article><br>
+              <article>
+                <div class="text left">
+                  <!-- Post Title -->
+                  <h4 class="title reset"><a href="#"></a></h4>
+                  <p class=""></p><a href="#" target="_blank"></a>
+                </div>
+              </article><br>
+              <article>
+                <div class="text left">
+                  <!-- Post Title -->
+                  <h4 class="title reset"><a href="#"></a></h4>
+                  <p class=""></p><a href="#" target="_blank"></a>
+                </div>
+              </article><br>
+              <article>
+                <div class="text left">
+                  <!-- Post Title -->
+                  <h4 class="title reset"><a href="#"></a></h4>
+                  <p class=""></p><a href="#" target="_blank"></a>
+                </div>
+              </article><br>
+              <article>
+                <div class="text left">
+                  <!-- Post Title -->
+                  <h4 class="title reset"><a href="#"></a></h4>
+                  <p class=""></p><a href="#" target="_blank"></a>
+                </div>
+              </article><br>
+              <article>
+                <div class="text left">
+                  <!-- Post Title -->
+                  <h4 class="title reset"><a href="#"></a></h4>
+                  <p class=""></p><a href="#" target="_blank"></a>
+                </div>
+              </article><br>
+              <article>
+                <div class="text left">
+                  <!-- Post Title -->
+                  <h4 class="title reset"><a href="#"></a></h4>
+                  <p class=""></p><a href="#" target="_blank"></a>
+                </div>
+              </article><br>
+              <article>
+                <div class="text left">
+                  <!-- Post Title -->
+                  <h4 class="title reset"><a href="#"></a></h4>
+                  <p class=""></p><a href="#" target="_blank"></a>
+                </div>
+              </article><br>
+              <article>
+                <div class="text left">
+                  <!-- Post Title -->
+                  <h4 class="title reset"><a href="#"></a></h4>
+                  <p class=""></p><a href="#" target="_blank"></a>
+                </div>
+              </article><br>
+
+            </div>
+
+            <!--这是分页器-->
+            <div class="pagination-centered">
+              <div id='demo9'></div>
+            </div>
+          </div>
+
+          <!--这是右边侧边栏-->
+          <div class="layui-col-md3">
+            <div class="sidebar">
+              <!-- Category Widget -->
+              <div class="widget category">
+                <!-- Widget Header -->
+                <h2>Hot</h2>
+                <ul class="category-list">
+                  <li>Artificial intelligence</li>
+                  <li>Blockchain</li>
+                  <li>Big data</li>
+                  <li>Cloud computing</li>
+                  <li>Internet of things</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <!--从这一部分开始就是主题内容-->
+
+
+  <!-- <script src="../static/js/jquery-3.3.1.js"> -->
+  </script>
+  <script>
+    var page_num = 0
+    var querybody = {
+      "type": "", // 类型，有三个可以选择的值：article  solution vendor
+      "query": "", // 查询字符串，即用户在搜索框输入的内容
+      "offset": 0
+    };
+    var total_num = 1000;
+    onload = function () {
+      var str = window.location.href.split("=")[1];
+      document.getElementById("keyword").value = decodeURIComponent(str);
+      querybody["query"] = decodeURIComponent(str);
+      querybody["type"] = 'vendor';
+      $.ajax({
+        url: "/search/paging",
+        type: "POST",
+        dataType: 'json',
+        data: JSON.stringify(querybody),
+        contentType: "application/json",
+        success: function (result) {
+          $("#comp a").append('(' + result['result']['total'] + ')');
+        },
+        error: function (error) {
+          console.log(error)
+        }
+      });
+      querybody["type"] = 'solution';
+      $.ajax({
+        url: "/search/paging",
+        type: "POST",
+        dataType: 'json',
+        data: JSON.stringify(querybody),
+        contentType: "application/json",
+        success: function (result) {
+          $("#solu a").append('(' + result['result']['total'] + ')');
+        },
+        error: function (error) {
+          console.log(error)
+        }
+      });
+      // var total_num=0;
+      querybody["type"] = 'article';
+      $.ajax({
+        url: "/search/paging",
+        type: "POST",
+        dataType: 'json',
+        data: JSON.stringify(querybody),
+        contentType: "application/json",
+        success: function (result) {
+          total_num = parseInt(result['result']['total'])
+          $("#tech a:eq('1') ").append('(' + result['result']['total'] + ')');
+          layui.use(['laypage', 'layer'], function () {
+            // alert('tom')
+            var laypage = layui.laypage,
+              layer = layui.layer;
+            // alert(total_num)
+            //自定义排版
+            laypage.render({
+              elem: 'demo9',
+              count: total_num //这里设置total_num要在AJAX内部才有效
+              ,
+              layout: ['prev', 'next', 'page'],
+              jump: function (obj, first) {
+                //obj包含了当前分页的所有参数，比如：
+                page_num = obj.curr - 1
+                querybody['offset'] = page_num * 10
+                $.ajax({
+                  url: "/search/paging",
+                  type: "POST",
+                  dataType: 'json',
+                  data: JSON.stringify(querybody),
+                  contentType: "application/json",
+                  success: function (result) {
+                    for (var i = 0; i < 10; i++) {
+                      var tit = result['result']['content'][i]['title']
+                      var summa = result['result']['content'][i]['summary']
+                      var url = result['result']['content'][i]['url']
+                      $("#main_content article:eq(" + i + ") div p").html(summa);
+                      $("#main_content article:eq(" + i + ") div h4 a").attr("href", url);
+                      $("#main_content article:eq(" + i + ") div a").attr("href", url);
+                      $("#main_content article:eq(" + i + ") div a").html("Read More");
+                      $("#main_content article:eq(" + i + ") div h4 a").attr("target", "_blank")
+                        .html(tit);
+                    }
+                  },
+                  error: function (error) {
+                    console.log(error)
+                  }
+                });
+              }
+            });
+          });
+        },
+        error: function (error) {
+          console.log(error)
+        }
+      });
+    };
+
+    $("#keyword").keydown(function (e) { //当按下按键时
+      if (e.which == 13) { //.which属性判断按下的是哪个键，回车键的键位序号为13
+        $('#search').trigger("click"); //触发搜索按钮的点击事件
+      }
+    });
+
+    function changeURLArg(url, arg, arg_val) {
+      var pattern = arg + '=([^&]*)';
+      var replaceText = arg + '=' + arg_val;
+      if (url.match(pattern)) {
+        var tmp = '/(' + arg + '=)([^&]*)/gi';
+        tmp = url.replace(eval(tmp), replaceText);
+        return tmp;
+      } else {
+        if (url.match('[\?]')) {
+          return url + '&' + replaceText;
+        } else {
+          return url + '?' + replaceText;
+        }
+      }
+    }
+    $("#search").click(function () {
+      querybody["query"] = document.getElementById("keyword").value;
+      querybody["type"] = 'article';
+      window.location.href = changeURLArg(window.location.href, 'index', document.getElementById("keyword").value)
+      $.ajax({
+        url: "/search/paging",
+        type: "POST",
+        dataType: 'json',
+        data: JSON.stringify(querybody),
+        contentType: "application/json",
+        success: function (result) {
+          total_num = parseInt(result['result']['total'])
+          // $("#tech a:eq('1') ").append('(' + result['result']['total'] + ')');
+          layui.use(['laypage', 'layer'], function () {
+            // alert('tom')
+            var laypage = layui.laypage,
+              layer = layui.layer;
+            // alert(total_num)
+            //自定义排版
+            laypage.render({
+              elem: 'demo9',
+              count: total_num
+              ,
+              layout: ['prev', 'next', 'page'],
+              jump: function (obj, first) {
+                //obj包含了当前分页的所有参数，比如：
+                page_num = obj.curr - 1
+                querybody['offset'] = page_num * 10
+                $.ajax({
+                  url: "/search/paging",
+                  type: "POST",
+                  dataType: 'json',
+                  data: JSON.stringify(querybody),
+                  contentType: "application/json",
+                  success: function (result) {
+                    for (var i = 0; i < 10; i++) {
+                      var tit = result['result']['content'][i]['title']
+                      var summa = result['result']['content'][i]['summary']
+                      var url = result['result']['content'][i]['url']
+                      $("#main_content article:eq(" + i + ") div p").html(summa);
+                      $("#main_content article:eq(" + i + ") div h4 a").attr("href", url);
+                      $("#main_content article:eq(" + i + ") div a").attr("href", url);
+                      $("#main_content article:eq(" + i + ") div a").html("Read More");
+                      $("#main_content article:eq(" + i + ") div h4 a").attr("target",
+                        "_blank").html(tit);
+                    }
+                  },
+                  error: function (error) {
+                    console.log(error)
+                  }
+                });
+              }
+            });
+          });
+        },
+        error: function (error) {
+          console.log(error)
+        }
+      });
+    });
+
+    function query_cont(ty) {
+      querybody["type"] = ty;
+      // alert(ty)
+      $.ajax({
+        url: "/search/paging",
+        type: "POST",
+        dataType: 'json',
+        data: JSON.stringify(querybody),
+        contentType: "application/json",
+        success: function (result) {
+          total_num = parseInt(result['result']['total'])
+          layui.use(['laypage', 'layer'], function () {
+            // alert('tom')
+            var laypage = layui.laypage,
+              layer = layui.layer;
+            // alert(total_num)
+            //自定义排版
+            laypage.render({
+              elem: 'demo9',
+              count: total_num
+              ,
+              layout: ['prev', 'next', 'page'],
+              jump: function (obj, first) {
+                //obj包含了当前分页的所有参数，比如：
+                page_num = obj.curr - 1
+                querybody['offset'] = page_num * 10
+                $.ajax({
+                  url: "/search/paging",
+                  type: "POST",
+                  dataType: 'json',
+                  data: JSON.stringify(querybody),
+                  contentType: "application/json",
+                  success: function (result) {
+                    for (var i = 0; i < 10; i++) {
+                      var tit = result['result']['content'][i]['title']
+                      var summa = result['result']['content'][i]['summary']
+                      var url = result['result']['content'][i]['url']
+                      $("#main_content article:eq(" + i + ") div p").html(summa);
+                      $("#main_content article:eq(" + i + ") div h4 a").attr("href", url);
+                      $("#main_content article:eq(" + i + ") div a").attr("href", url);
+                      $("#main_content article:eq(" + i + ") div a").html("Read More");
+                      $("#main_content article:eq(" + i + ") div h4 a").attr("target", "_blank")
+                        .html(tit);
+                    }
+                  },
+                  error: function (error) {
+                    console.log(error)
+                  }
+                });
+              }
+            });
+          });
+        },
+        error: function (error) {
+          console.log(error)
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
